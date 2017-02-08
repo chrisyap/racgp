@@ -94,10 +94,10 @@ $color-gray:         #707070;
     }
     .contacts {
       position: relative;
-      padding-left: 20px;
+      padding-left: 30px;
       .icon, .fa {
         position: absolute;
-        left: -5px;
+        left: 3px;
         margin-top: 2px;
       }
     }
@@ -129,9 +129,8 @@ $color-gray:         #707070;
         padding: 14px 15px 12px;
         @include transition;
         &:hover, &:focus {
-          background-color: rgba(white,.1);
-          border-bottom-color: rgba(white,.1);
           outline: none;
+          color: rgba(white,1);
         }
       }
       &.active {
