@@ -1,0 +1,206 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+<div class="mainContainer bs-flex bs-flex-column">
+  <flex-accordion class="flexAccordion">
+    <div class="flexAccordion__column flexAccordion__column--expanded flexAccordion__column--black" style="background-color: #ccc">
+
+    </div>
+
+    <div class="flexAccordion__main flexAccordion__clinicalMain dropshadow-left">
+      <header id="header" class="flexAccordion__main__header">
+        <div id="header-details" class="patientDemographics">
+          <patient-header>
+            <div class="patient-status">
+              <a href="#"><i class="fa fa-plus-circle fa-lg"></i></a>
+              <span class="label label-default">X-rays for pick-up <i class="fa fa-times-circle fa-lg"></i></span>
+              <span class="label label-danger">Bad debt <i class="fa fa-times-circle fa-lg"></i></span>
+              <span class="label label-success">OPV successful</span>
+              <span class="label label-default"><i class="fa fa-refresh fa-spin fa-lg fa-fw"></i> OVV loading</span>
+            </div>
+            <div class="patient-summ pointer">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div class="gender-age text-center">
+                      <p class="gender"><i class="icon ion-female"></i></p>
+                      <p class="age lead">43</p>
+                    </div>
+                    <div class="names">
+                      <h1 class="firstname">Alexandra</h1>
+                      <h2 class=""><span class="middlename">Penelope</span><br><span class="lastname">Theodoropoulous</span></h2>
+                    </div>
+                  </div>
+                  <div class="col-xs-3 contacts">
+                    <p class="mobile-number"><i class="fa fa-phone"></i> 0422 111 333</p>
+                    <p class="address"><i class="fa fa-home"></i> Unit 22 128 Railway St<br>North Parramatta NSW 2999</p>
+                  </div>
+                  <div class="col-xs-3">
+                    <p class="cards">
+                      <i class="fa fa-square fa-lg"></i> <span class="text-warning">No IHI available</span> <br>
+                      <i class="fa fa-square fa-lg"></i> <span class="text-warning">No Medicare card</span> <br>
+                      <i class="fa fa-square fa-lg"></i> 045953 2092 01183 <br>
+                    </p>
+                  </div>
+                  <div class="col-xs-3 toggle text-right">
+                    <i class="fa fa-angle-down fa-2x" style="display: none"></i>
+                    <i class="fa fa-angle-up fa-2x"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </patient-header>
+        </div>
+      </header>
+
+      <div class="patient-record">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li role="presentation" class="active"><a href="#patient-info" aria-controls="patient-info" role="tab" data-toggle="tab">Patient info</a></li>
+          <li role="presentation"><a href="#contact-info" aria-controls="contact-info" role="tab" data-toggle="tab">Contact info</a></li>
+          <li role="presentation"><a href="#addresses" aria-controls="addresses" role="tab" data-toggle="tab">Addresses</a></li>
+          <li role="presentation"><a href="#payment-info" aria-controls="payment-info" role="tab" data-toggle="tab">Payment info</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="patient-info">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="md-form">
+                  <label for="form1" class="active" data-error="Please enter a valid email address">Title</label>
+                  <button type="button" class="btn btn-toggle btn-sm ">Mr</button>
+                  <button type="button" class="btn btn-toggle btn-sm ">Mrs</button>
+                  <button type="button" class="btn btn-toggle btn-sm ">Miss</button>
+                  <button type="button" class="btn btn-toggle btn-sm active">Ms</button>
+                  <button type="button" class="btn btn-toggle btn-sm ">Dr</button>
+                  <button type="button" class="btn btn-toggle btn-sm ">Other</button>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="Theodoropoulous">
+                      <label for="form1" class="">Surname *</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="Penelope">
+                      <label for="form1" class="">Middle name/s</label>
+                    </div>
+                    <br>
+                    <div class="md-form">
+                      <select class="mdb-select">
+                        <option value="" disabled>Select language</option>
+                        <option value="1" selected="selected">Esperanto</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label class="active">Preferred language</label>
+                    </div>
+                    <div class="md-form">
+                      <select class="mdb-select">
+                        <option value="" disabled selected="selected">Select language</option>
+                        <option value="1">Esperanto</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label class="active">Other languages</label>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="Alexandra">
+                      <label for="form1" class="" data-error="Please enter a valid email address">First name *</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="Alex">
+                      <label for="form1" class="">Preferred name</label>
+                    </div>
+
+                    <br>
+
+                    <div class="md-form">
+                      <label for="form1" class="active" data-error="Please enter a valid email address"> </label>
+                      <button type="button" class="btn btn-toggle btn-sm ">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i> Need interpreter</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+
+                <div class="row">
+                  <div class="col-xs-6">
+
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="14.08.1943">
+                      <label for="form1" class="">Date of birth *</label>
+                    </div>
+
+                    <div class="md-form">
+                      <select class="mdb-select">
+                        <option value="" disabled selected>Select a country</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label class="active">Place of birth</label>
+                    </div>
+
+                    <div class="md-form">
+                      <label for="form1" class="active" data-error="Please enter a valid email address">Gender *</label>
+                      <button type="button" class="btn btn-toggle btn-sm ">Male</button>
+                      <button type="button" class="btn btn-toggle btn-sm active">Female</button>
+                      <button type="button" class="btn btn-toggle btn-sm ">Other</button>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="">
+                      <label for="form1" class="">Date of death (if applicable)</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="26.09.1984">
+                      <label for="form1" class="">Date arrived in Australia</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form1" class="form-control" value="">
+                      <label for="form1" class="">Notes</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-xs-6">
+              </div>
+              <div class="col-xs-6"></div>
+
+            </div>
+
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="contact-info">
+            <h1>Contact info</h1>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="addresses">
+            <h1>Addresses</h1>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="payment-info">
+            <h1>Payment info</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </flex>
+</div>

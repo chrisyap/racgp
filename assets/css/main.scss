@@ -1,0 +1,217 @@
+---
+# Jekyll front matter
+---
+
+@import
+  "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+  // "bootstrap-sass/assets/stylesheets/bootstrap",
+  "https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css";
+
+$color-red:          #BA0319;
+$color-green:        #417505;
+$color-orange:       #E38D00;
+$color-gray-darkest: #191919;
+$color-gray-dark:    #4A4A4A;
+$color-gray:         #707070;
+
+@mixin transition {
+  transition: .3s ease;
+}
+
+.text-warning {
+  color: $color-orange;
+}
+.dropshadow-left {
+  box-shadow: -4px 0 0 rgba(black,.1), -1px 0 0 rgba(black,.3);
+}
+.pointer {
+  cursor: pointer;
+}
+.patientDemographics {
+  .patient-status {
+    min-height: 44px;
+    background-color: $color-gray-darkest;
+    padding: 5px 20px;
+    a {
+      color: #ffffff;
+    }
+    .label {
+      font-weight: 400;
+      height: 32px;
+      line-height: 32px;
+      padding: 8px 15px;
+      font-size: 14px;
+      border-radius: 16px;
+      margin: 0 0 0 3px;
+      .fa-times-circle {
+        margin-left: 4px;
+      }
+      &.label-default {
+        background-color: $color-gray-dark;
+      }
+      &.label-danger {
+        background-color: $color-red;
+      }
+      &.label-success {
+        background-color: $color-green;
+      }
+    }
+  }
+  .patient-summ {
+    height: 110px;
+    padding: 12px 20px;
+    font-size: 16px;
+    .gender-age {
+      display: inline-block;
+      line-height: 1;
+      .gender, .age {
+        margin: 0;
+      }
+      .gender {
+        .icon {
+          font-size: 48px;
+          margin: 0;
+          height: auto;
+          width: auto;
+          float: none;
+        }
+      }
+    }
+    .names {
+      display: inline-block;
+      margin-left: 15px;
+      > * {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 400;
+      }
+      .firstname {
+        font-size: 24px;
+      }
+      .middlename, .lastname {
+      }
+    }
+    .contacts {
+      position: relative;
+      padding-left: 20px;
+      .icon, .fa {
+        position: absolute;
+        left: -5px;
+        margin-top: 2px;
+      }
+    }
+    .cards {
+      line-height: 1.65;
+      .fa, .icon {
+        margin-right: 5px;
+      }
+    }
+    .toggle {
+      .fa, .icon {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.patient-record {
+  .nav-tabs {
+    background-color: #005cab;
+    border-radius: 0;
+    > li {
+      > a {
+        text-transform: uppercase;
+        border: 0px solid transparent;
+        border-width: 0 0 3px;
+        border-radius: 0;
+        color: rgba(white,.7);
+        padding: 14px 15px 12px;
+        @include transition;
+        &:hover, &:focus {
+          background-color: rgba(white,.1);
+          border-bottom-color: rgba(white,.1);
+          outline: none;
+        }
+      }
+      &.active {
+        > a, > a:hover, a:focus {
+          color: white;
+          background-color: transparent;
+          border-width: 0 0 3px 0;
+          border-bottom-color: rgba(white,.7);
+        }
+      }
+    }
+  }
+  .tab-content {
+    font-size: 16px;
+    .tab-pane {
+      padding: 20px;
+      .md-form {
+        .btn {
+          &.btn-toggle {
+            margin: 10px 0px 7px;
+            box-shadow: none;
+            color: $color-gray-darkest !important;
+            background-color: transparent;
+            i {
+              margin-bottom: 0;
+              height: auto;
+            }
+            &.active {
+              color: white !important;
+              background-color: $color-gray-dark;
+            }
+          }
+        }
+        .form-control {
+          padding: .5rem 0 .3rem;
+          color: $color-gray-darkest;
+          &:focus {
+            border-width: 0 0 1px 0 !important;
+            box-shadow: none !important;
+            border-bottom-color: $color-gray-darkest !important;
+          }
+        }
+        select {
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px;
+          background-color: transparent;
+          border: none;
+          border-radius: 0px;
+          border-bottom: 1px solid #ccc;
+          outline: 0;
+          padding: .3rem 0;
+          height: 2.1rem;
+          width: 100%;
+          font-size: 1rem;
+          margin-top: .2rem;
+          // margin-bottom: 1rem;
+          box-shadow: none;
+          box-sizing: content-box;
+          transition: all .3s;
+          position: relative;
+          & + label {
+            width: 100%;
+            top: .75rem;
+            &:after {
+              content: '\f0d7';
+              position: absolute;
+              font-family: 'FontAwesome';
+              right: 0;
+              top: 200%;
+            }
+          }
+        }
+        label {
+          font-weight: 400;
+          &.active {
+            color: $color-gray;
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+}
