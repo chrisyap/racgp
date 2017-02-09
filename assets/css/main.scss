@@ -144,12 +144,19 @@ $color-gray:         #707070;
     .tab-pane {
       padding: 20px;
 
+      hr {
+        border-top: 1px solid rgba(black,.05);
+      }
+
       .form-group {
         position: relative;
         margin: 0 0 10px;
         label {
           padding-left: 0;
           font-weight: 400;
+        }
+        .form-control {
+          font-size: 16px;
         }
         &.has-error {
           .form-control {
@@ -198,7 +205,7 @@ $color-gray:         #707070;
           }
         }
         &.radio, &.checkbox {
-          margin-bottom: 26px;
+          margin-bottom: 31px;
           label {
             display: block;
             font-size: 12px;
@@ -272,6 +279,7 @@ $color-gray:         #707070;
           }
         }
         &.select {
+          margin-bottom: 30px;
           label {
             top: 0;
             padding-left: 0;
@@ -300,7 +308,6 @@ $color-gray:         #707070;
           @include transitions;
         }
       }
-
     }
   }
 }
