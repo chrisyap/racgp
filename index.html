@@ -57,41 +57,46 @@ layout: default
         </div>
       </header>
 
-      <div class="patient-record" style="display: none">
+      <div class="patient-record" >
         <ul class="nav nav-tabs nav-justified" role="tablist">
-          <li role="presentation" class="active"><a href="#patient-info" aria-controls="patient-info" role="tab" data-toggle="tab">Patient info</a></li>
-          <li role="presentation"><a href="#contact-info" aria-controls="contact-info" role="tab" data-toggle="tab">Contact info</a></li>
-          <li role="presentation"><a href="#addresses" aria-controls="addresses" role="tab" data-toggle="tab">Addresses</a></li>
+          <li role="presentation" class="active"><a href="#patient-details" aria-controls="patient-details" role="tab" data-toggle="tab">Patient details</a></li>
+          <li role="presentation"><a href="#contact-details" aria-controls="contact-details" role="tab" data-toggle="tab">Contact details</a></li>
+          <li role="presentation"><a href="#carer" aria-controls="carer" role="tab" data-toggle="tab">Carer details</a></li>
+          <li role="presentation"><a href="#power-attorney" aria-controls="power-attorney" role="tab" data-toggle="tab">Power of attorney</a></li>
           <li role="presentation"><a href="#payment-info" aria-controls="payment-info" role="tab" data-toggle="tab">Payment info</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="patient-info">
+          <div role="tabpanel" class="tab-pane fade in active" id="patient-details">
             <div class="row">
               <div class="col-xs-6">
-                <div class="md-form">
+                <div class="form-group radio">
                   <label for="form1" class="active" data-error="Please enter a valid email address">Title</label>
-                  <button type="button" class="btn btn-toggle btn-sm ">Mr</button>
-                  <button type="button" class="btn btn-toggle btn-sm ">Mrs</button>
-                  <button type="button" class="btn btn-toggle btn-sm ">Miss</button>
-                  <button type="button" class="btn btn-toggle btn-sm active">Ms</button>
-                  <button type="button" class="btn btn-toggle btn-sm ">Dr</button>
-                  <button type="button" class="btn btn-toggle btn-sm ">Other</button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm ">Mr</button>
+                    <button type="button" class="btn btn-default btn-sm ">Mrs</button>
+                    <button type="button" class="btn btn-default btn-sm ">Miss</button>
+                    <button type="button" class="btn btn-default btn-sm active">Ms</button>
+                    <button type="button" class="btn btn-default btn-sm ">Dr</button>
+                    <button type="button" class="btn btn-default btn-sm ">Other</button>
+                  </div>
                 </div>
                 <div class="row">
                   <div class="col-xs-6">
 
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="Theodoropoulous">
                       <label for="form1" class="">Surname *</label>
+                      <span class="help-text">Please enter patient's surname</span>
                     </div>
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="Penelope">
                       <label for="form1" class="">Middle name/s</label>
+                      <span class="help-text">Please enter patient's middlename/s (if any)</span>
                     </div>
                     <br>
-                    <div class="md-form">
-                      <select class="mdb-select">
+                    <div class="form-group select">
+                      <select class="form-control">
                         <option value="" disabled>Select language</option>
                         <option value="1" selected="selected">Esperanto</option>
                         <option value="2">Option 2</option>
@@ -99,8 +104,8 @@ layout: default
                       </select>
                       <label class="active">Preferred language</label>
                     </div>
-                    <div class="md-form">
-                      <select class="mdb-select">
+                    <div class="form-group select">
+                      <select class="form-control">
                         <option value="" disabled selected="selected">Select language</option>
                         <option value="1">Esperanto</option>
                         <option value="2">Option 2</option>
@@ -112,20 +117,22 @@ layout: default
                   </div>
                   <div class="col-xs-6">
 
-                    <div class="md-form">
+                    <div class="form-group floating-label has-warning">
                       <input type="text" id="form1" class="form-control" value="Alexandra">
-                      <label for="form1" class="" data-error="Please enter a valid email address">First name *</label>
+                      <label for="form1" class="">First name *</label>
+                      <span class="help-text">Please enter patient's first name</span>
                     </div>
-                    <div class="md-form">
+                    <div class="form-group floating-label has-error">
                       <input type="text" id="form1" class="form-control" value="Alex">
                       <label for="form1" class="">Preferred name</label>
+                      <span class="help-text">Please enter patient's preferred name (if any)</span>
                     </div>
 
                     <br>
 
-                    <div class="md-form">
+                    <div class="form-group checkbox">
                       <label for="form1" class="active" data-error="Please enter a valid email address"> </label>
-                      <button type="button" class="btn btn-toggle btn-sm ">
+                      <button type="button" class="btn btn-default btn-sm ">
                         <i class="icon ion-ios-circle-outline"></i>
                         <i class="icon ion-ios-checkmark" style="display: none"></i> Need interpreter</button>
                     </div>
@@ -138,13 +145,13 @@ layout: default
                 <div class="row">
                   <div class="col-xs-6">
 
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="14.08.1943">
                       <label for="form1" class="">Date of birth *</label>
                     </div>
 
-                    <div class="md-form">
-                      <select class="mdb-select">
+                    <div class="form-group select">
+                      <select class="form-control">
                         <option value="" disabled selected>Select a country</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -153,30 +160,61 @@ layout: default
                       <label class="active">Place of birth</label>
                     </div>
 
-                    <div class="md-form">
+                    <div class="form-group radio">
                       <label for="form1" class="active" data-error="Please enter a valid email address">Gender *</label>
-                      <button type="button" class="btn btn-toggle btn-sm ">Male</button>
-                      <button type="button" class="btn btn-toggle btn-sm active">Female</button>
-                      <button type="button" class="btn btn-toggle btn-sm ">Other</button>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-sm ">Male</button>
+                        <button type="button" class="btn btn-default btn-sm active">Female</button>
+                        <button type="button" class="btn btn-default btn-sm ">Other</button>
+                      </div>
                     </div>
 
                   </div>
                   <div class="col-xs-6">
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="">
                       <label for="form1" class="">Date of death (if applicable)</label>
                     </div>
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="26.09.1984">
                       <label for="form1" class="">Date arrived in Australia</label>
                     </div>
-                    <div class="md-form">
+                    <div class="form-group floating-label">
                       <input type="text" id="form1" class="form-control" value="">
                       <label for="form1" class="">Notes</label>
                     </div>
                   </div>
 
                 </div>
+
+
+                <br>
+
+                <div class="form-group floating-label">
+                  <input type="text" id="form1" class="form-control" value="Greek">
+                  <label for="form1" class="">Ethnicity</label>
+                </div>
+
+                <div class="form-group labelless">
+                  <input type="text" id="form1" class="form-control" value="Indonesian">
+                  <label for="form1" class=""> </label>
+                </div>
+
+                <div class="form-group labelless">
+                  <input type="text" id="form1" class="form-control" value="" placeholder="Add an ethnicity">
+                  <label for="form1" class=""> </label>
+                </div>
+
+                <div class="form-group select">
+                  <select class="form-control">
+                    <option value="" disabled>Select one</option>
+                    <option value="1" selected>Neither Aboriginal nor Torres Strait Islander</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label class="active">ATSI *</label>
+                </div>
+
               </div>
             </div>
 
@@ -189,11 +227,14 @@ layout: default
             </div>
 
           </div>
-          <div role="tabpanel" class="tab-pane fade" id="contact-info">
-            <h1>Contact info</h1>
+          <div role="tabpanel" class="tab-pane fade" id="contact-details">
+            <h1>Contact details</h1>
           </div>
-          <div role="tabpanel" class="tab-pane fade" id="addresses">
-            <h1>Addresses</h1>
+          <div role="tabpanel" class="tab-pane fade" id="carer">
+            <h1>Carer</h1>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="power-attorney">
+            <h1>Power of attorney</h1>
           </div>
           <div role="tabpanel" class="tab-pane fade" id="payment-info">
             <h1>Payment info</h1>
