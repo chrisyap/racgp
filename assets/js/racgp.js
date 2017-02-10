@@ -23,8 +23,13 @@ $(".floating-label").each(function () {
 $('.radio').on('click','.btn',function(){
   var radio = $(this).parents('.radio');
   var btn = $(this);
-  radio.find('.btn').removeClass('active');
-  btn.addClass('active');
+  if (btn.hasClass('active')) {
+
+  } else {
+    radio.find('.btn').removeClass('active');
+    btn.addClass('active');
+    radio.find('.btn i').toggle();
+  }
 })
 
 $('.checkbox').on('click','.btn',function(){

@@ -2,6 +2,8 @@
 # Jekyll front matter
 ---
 
+
+
 $color-red:          #BA0319;
 $color-green:        #417505;
 $color-orange:       #E38D00;
@@ -22,34 +24,36 @@ $color-gray:         #707070;
 .pointer {
   cursor: pointer;
 }
+.patientDemographics, .patient-record {
+  .label {
+    font-weight: 400;
+    height: 28px;
+    line-height: 28px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 16px;
+    margin: 0 0 0 3px;
+    .fa-times-circle {
+      margin-left: 4px;
+    }
+    &.label-default {
+      background-color: $color-gray-dark;
+    }
+    &.label-danger {
+      background-color: $color-red;
+    }
+    &.label-success {
+      background-color: $color-green;
+    }
+  }
+}
 .patientDemographics {
   .patient-status {
     min-height: 44px;
     background-color: $color-gray-darkest;
-    padding: 5px 20px;
+    padding: 8px 20px;
     a {
       color: #ffffff;
-    }
-    .label {
-      font-weight: 400;
-      height: 32px;
-      line-height: 32px;
-      padding: 8px 15px;
-      font-size: 14px;
-      border-radius: 16px;
-      margin: 0 0 0 3px;
-      .fa-times-circle {
-        margin-left: 4px;
-      }
-      &.label-default {
-        background-color: $color-gray-dark;
-      }
-      &.label-danger {
-        background-color: $color-red;
-      }
-      &.label-success {
-        background-color: $color-green;
-      }
     }
   }
   .patient-summ {
@@ -231,6 +235,10 @@ $color-gray:         #707070;
             margin: 0 0 1px 0;
             border: 0;
             border-radius: 3px !important;
+            &.btn-success {
+              background-color: $color-green;
+              width: 100%;
+            }
             &.btn-default {
               background-color: transparent;
               font-weight: 400;
@@ -293,19 +301,19 @@ $color-gray:         #707070;
         }
         &.select {
           margin-bottom: 30px;
+          &:before {
+            content: '\f35f';
+            position: absolute;
+            right: 0;
+            top: 15px;
+            font-family: "Ionicons";
+          }
           label {
             top: 0;
             padding-left: 0;
             font-size: 12px;
             width: 100%;
             color: rgba(black,.5);
-            &:before {
-              content: '\f0d7';
-              position: absolute;
-              right: 0;
-              top: 20px;
-              font-family: 'FontAwesome';
-            }
           }
           .form-control {
             border-radius: 0;
