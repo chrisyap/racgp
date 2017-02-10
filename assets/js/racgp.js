@@ -31,10 +31,5 @@ $('.checkbox').on('click','.btn',function(){
   var radio = $(this).parents('.checkbox');
   var btn = $(this);
   btn.find('i').toggle();
-  if (btn.hasClass('active')){
-    btn.removeClass('active');
-  } else {
-    radio.find('.btn').removeClass('active');
-    btn.addClass('active');
-  }
+  btn.toggleClass('active');
 })

@@ -146,7 +146,7 @@ layout: default
                   <div class="col-xs-6">
 
                     <div class="form-group floating-label">
-                      <input type="text" id="form1" class="form-control" value="14.08.1943">
+                      <input type="text" id="form1" class="form-control datepicker" id="dob" value="14.08.1943">
                       <label for="form1" class="">Date of birth *</label>
                       <span class="help-text">Please enter patient's date of birth</span>
                     </div>
@@ -173,12 +173,12 @@ layout: default
                   </div>
                   <div class="col-xs-6">
                     <div class="form-group floating-label">
-                      <input type="text" id="form1" class="form-control" value="">
+                      <input type="text" id="form1" class="form-control datepicker" value="">
                       <label for="form1" class="">Date of death (if applicable)</label>
                       <span class="help-text">Please enter patient's date of death (if applicable)</span>
                     </div>
                     <div class="form-group floating-label">
-                      <input type="text" id="form1" class="form-control" value="26.09.1984">
+                      <input type="text" id="form1" class="form-control datepicker" value="26.09.1984">
                       <label for="form1" class="">Date arrived in Australia</label>
                       <span class="help-text">Please enter patient's date arrived in Australia</span>
                     </div>
@@ -336,9 +336,9 @@ layout: default
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xs-12 text-center">
+                  <div class="col-xs-12 text-center hide">
                     <br>
-                    <i class="fa fa-plus-circle fa-2x"></i>
+                    <i class="fa fa-plus-circle add pointer"></i>
                   </div>
                 </div>
 
@@ -347,11 +347,188 @@ layout: default
 
             </div>
 
+            <div class="row">
+              <div class="col-xs-12 text-center add">
+                <br>
+                <i class="fa fa-plus-circle pointer"></i> Add another
+              </div>
+            </div>
+
             <hr />
+
+            <div class="row">
+              <div class="col-xs-6">
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="0422 111 333">
+                      <label for=""><i class="icon ion-android-phone-portrait"></i> Mobile number</label>
+                      <span class="help-text">Please enter patient's mobile number </span>
+                    </div>
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control">
+                      <label for=""><i class="icon ion-home"></i> Home number</label>
+                      <span class="help-text">Please enter patient's home number </span>
+                    </div>
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control">
+                      <label for=""><i class="icon ion-briefcase"></i> Work number</label>
+                      <span class="help-text">Please enter patient's work number </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="form-group checkbox">
+                      <label for="">&nbsp;</label>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        Business hours
+                      </button>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        After hours
+                      </button>
+                    </div>
+                    <div class="form-group checkbox">
+                      <label for="">&nbsp;</label>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        Business hours
+                      </button>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        After hours
+                      </button>
+                    </div>
+                    <div class="form-group checkbox">
+                      <label for="">&nbsp;</label>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        Business hours
+                      </button>
+                      <button class="btn btn-default btn-sm">
+                        <i class="icon ion-ios-circle-outline"></i>
+                        <i class="icon ion-ios-checkmark" style="display: none"></i>
+                        After hours
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control" value="yacketyyakfarmer@gmail.com">
+                  <label for=""><i class="icon ion-ios-email"></i> Email address</label>
+                  <span class="help-text">Please enter patient's email address </span>
+                </div>
+
+              </div>
+              <div class="col-xs-6">
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="0419 580 109">
+                      <label for="">Emergency contact's #</label>
+                      <span class="help-text">&nbsp; </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="Martha">
+                      <label for="">Emergency contact's name</label>
+                      <span class="help-text"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="Mother's mobile">
+                      <label for="">Note</label>
+                      <span class="help-text"> </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="">
+                      <label for="">Next of kin #</label>
+                      <span class="help-text"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="">
+                      <label for="">Next of kin name</label>
+                      <span class="help-text"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="form-group floating-label">
+                      <input type="text" class="form-control" value="">
+                      <label for="">Note</label>
+                      <span class="help-text"> </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group checkbox">
+                  <label for="">Consent for reminders</label>
+                  <div class="btn-group">
+                    <button class="btn btn-default btn-sm active">Phone</button>
+                    <button class="btn btn-default btn-sm active">SMS</button>
+                    <button class="btn btn-default btn-sm">Mail</button>
+                    <button class="btn btn-default btn-sm">Email</button>
+                  </div>
+                </div>
+                <div class="form-group checkbox">
+                  <label for="">Consent for newsletter</label>
+                  <div class="btn-group">
+                    <button class="btn btn-default btn-sm">Phone</button>
+                    <button class="btn btn-default btn-sm active">SMS</button>
+                    <button class="btn btn-default btn-sm">Mail</button>
+                    <button class="btn btn-default btn-sm active">Email</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
 
           </div>
           <div role="tabpanel" class="tab-pane fade" id="carer">
-            <h1>Carer</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control" name="" value="Maeve Millay">
+                  <label for="">Name</label>
+                  <span class="help-text">Please enter carer's name</span>
+                </div>
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control" name="" value="0419 5580 109">
+                  <label for="">Contact #</label>
+                  <span class="help-text">Please enter carer's contact number</span>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control" name="" value="6148 Railway Parade">
+                  <label for="">Address line 1</label>
+                  <span class="help-text">Please enter carer's address</span>
+                </div>
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control" name="" value="">
+                  <label for="">Address line 2</label>
+                  <span class="help-text">Please enter carer's address</span>
+                </div>
+                
+              </div>
+            </div>
           </div>
           <div role="tabpanel" class="tab-pane fade" id="power-attorney">
             <h1>Power of attorney</h1>
