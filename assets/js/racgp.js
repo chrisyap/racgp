@@ -1,6 +1,7 @@
 $('.patientDemographics').on('click','patient-header',function(){
-  $(this).find('.toggle i').toggle();
-  $('.patient-record').slideToggle();
+  // $(this).find('.toggle i').toggle();
+  // $('.patient-record').slideToggle();
+  $('#patient-record').modal('show');
 });
 
 $(".floating-label").each(function () {
