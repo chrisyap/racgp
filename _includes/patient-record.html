@@ -1,0 +1,803 @@
+
+
+<div class="patient-record" style="display: none">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active"><a href="#patient-details" aria-controls="patient-details" role="tab" data-toggle="tab">Patient details</a></li>
+    <li role="presentation"><a href="#contact-details" aria-controls="contact-details" role="tab" data-toggle="tab">Contact details</a></li>
+    <li role="presentation"><a href="#carer" aria-controls="carer" role="tab" data-toggle="tab">Carer details</a></li>
+    <li role="presentation"><a href="#power-attorney" aria-controls="power-attorney" role="tab" data-toggle="tab">Power of attorney</a></li>
+    <li role="presentation"><a href="#payment-info" aria-controls="payment-info" role="tab" data-toggle="tab">Payment info</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="patient-details">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group radio">
+            <label for="form1" class="active" data-error="Please enter a valid email address">Title</label>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm ">Mr</button>
+              <button type="button" class="btn btn-default btn-sm ">Mrs</button>
+              <button type="button" class="btn btn-default btn-sm ">Miss</button>
+              <button type="button" class="btn btn-default btn-sm active">Ms</button>
+              <button type="button" class="btn btn-default btn-sm ">Dr</button>
+              <button type="button" class="btn btn-default btn-sm ">Other</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control" value="Theodoropoulous">
+                <label for="form1" class="">Surname *</label>
+                <span class="help-text">Please enter patient's surname</span>
+              </div>
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control" value="Penelope">
+                <label for="form1" class="">Middle name/s</label>
+                <span class="help-text">Please enter patient's middlename/s (if any)</span>
+              </div>
+              <br>
+              <div class="form-group select">
+                <select class="form-control">
+                  <option value="" disabled>Select language</option>
+                  <option value="1" selected="selected">Esperanto</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label class="active">Preferred language</label>
+              </div>
+              <div class="form-group select">
+                <select class="form-control">
+                  <option value="" disabled selected="selected">Select language</option>
+                  <option value="1">Esperanto</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label class="active">Other languages</label>
+              </div>
+
+            </div>
+            <div class="col-xs-6">
+
+              <div class="form-group floating-label has-warning">
+                <input type="text" id="form1" class="form-control" value="Alexandra">
+                <label for="form1" class="">First name *</label>
+                <span class="help-text">Please enter patient's first name</span>
+              </div>
+              <div class="form-group floating-label has-error">
+                <input type="text" id="form1" class="form-control" value="Alex">
+                <label for="form1" class="">Preferred name</label>
+                <span class="help-text">Please enter patient's preferred name (if any)</span>
+              </div>
+
+              <br>
+
+              <div class="form-group checkbox">
+                <label for="form1" class="active" data-error="Please enter a valid email address">&nbsp;</label>
+                <button type="button" class="btn btn-default btn-sm ">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i>  -->
+                  Need interpreter</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+
+          <div class="row">
+            <div class="col-xs-6">
+
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control datepicker" id="dob" value="14.08.1943">
+                <label for="form1" class="">Date of birth *</label>
+                <span class="help-text">Please enter patient's date of birth</span>
+              </div>
+
+              <div class="form-group select">
+                <select class="form-control">
+                  <option value="" disabled selected>Select a country</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label class="active">Place of birth</label>
+              </div>
+
+              <div class="form-group radio">
+                <label for="form1" class="active" data-error="Please enter a valid email address">Gender *</label>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-sm ">Male</button>
+                  <button type="button" class="btn btn-default btn-sm active">Female</button>
+                  <button type="button" class="btn btn-default btn-sm ">Other</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control datepicker" value="">
+                <label for="form1" class="">Date of death (if applicable)</label>
+                <span class="help-text">Please enter patient's date of death (if applicable)</span>
+              </div>
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control datepicker" value="26.09.1984">
+                <label for="form1" class="">Date arrived in Australia</label>
+                <span class="help-text">Please enter patient's date arrived in Australia</span>
+              </div>
+              <div class="form-group floating-label">
+                <input type="text" id="form1" class="form-control" value="">
+                <label for="form1" class="">Notes</label>
+                <span class="help-text">Please enter more info</span>
+              </div>
+            </div>
+
+          </div>
+
+
+          <br>
+
+          <div class="form-group floating-label">
+            <input type="text" id="form1" class="form-control" value="Greek">
+            <label for="form1" class="">Ethnicity</label>
+          </div>
+
+          <div class="form-group labelless">
+            <input type="text" id="form1" class="form-control" value="Indonesian">
+            <label for="form1" class=""> </label>
+          </div>
+
+          <div class="form-group labelless">
+            <input type="text" id="form1" class="form-control" value="" placeholder="Add an ethnicity">
+            <label for="form1" class=""> </label>
+          </div>
+
+          <div class="form-group select">
+            <select class="form-control">
+              <option value="" disabled>Select one</option>
+              <option value="1" selected>Neither Aboriginal nor Torres Strait Islander</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label class="active">ATSI *</label>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-6">
+        </div>
+        <div class="col-xs-6"></div>
+
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="contact-details">
+
+      <div class="row">
+
+        <div class="col-xs-2">
+          <div class="form-group select">
+            <select name="" id="" class="form-control">
+              <option value="">Please select</option>
+              <option selected>Home</option>
+              <option>Work</option>
+              <option>Postal</option>
+              <option>School</option>
+              <option>Carer</option>
+            </select>
+            <label for="">Location *</label>
+          </div>
+          <div class="form-group checkbox">
+            <label for="">&nbsp;</label>
+            <button class="btn btn-default btn-sm active">
+              <!-- <i class="icon ion-ios-circle-outline" style="display: none"></i>
+              <i class="icon ion-ios-checkmark"></i> -->
+              Preferred</button>
+          </div>
+        </div>
+        <div class="col-xs-5">
+
+          <div class="form-group select">
+            <select name="" id="" class="form-control">
+              <option value="">Please select</option>
+              <option selected>Apartment building</option>
+            </select>
+            <label for="">Type of dwelling</label>
+          </div>
+
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" value="Unit 22 128 Railway St">
+            <label for="">Address line 1 *</label>
+            <span class="help-text">Please enter patient's street address</span>
+          </div>
+
+          <div class="form-group floating-label">
+            <input type="text" class="form-control">
+            <label for="">Address line 2</label>
+            <span class="help-text">Please enter patient's street address</span>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="North Parramatta">
+                <label for="">Suburb *</label>
+                <span class="help-text">Please enter patient's suburb</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group select">
+                <select name="" id="" class="form-control">
+                  <option value="" >--</option>
+                  <option selected>NSW</option>
+                  <option>NT</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>TAS</option>
+                  <option>VIC</option>
+                  <option>WA</option>
+                </select>
+                <label for="">State *</label>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="2999">
+                <label for="">Postcode *</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-5">
+
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">Resident name</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">Age</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">Relationship</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center hide">
+              <br>
+              <i class="fa fa-plus-circle add pointer"></i>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 text-center add">
+          <br>
+          <i class="fa fa-plus-circle pointer"></i> Add another
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-xs-6">
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="0422 111 333">
+                <label for=""><i class="icon ion-android-phone-portrait"></i> Mobile number</label>
+                <span class="help-text">Please enter patient's mobile number </span>
+              </div>
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for=""><i class="icon ion-home"></i> Home number</label>
+                <span class="help-text">Please enter patient's home number </span>
+              </div>
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for=""><i class="icon ion-briefcase"></i> Work number</label>
+                <span class="help-text">Please enter patient's work number </span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group checkbox">
+                <label for="">&nbsp;</label>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  Business hours
+                </button>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  After hours
+                </button>
+              </div>
+              <div class="form-group checkbox">
+                <label for="">&nbsp;</label>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  Business hours
+                </button>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  After hours
+                </button>
+              </div>
+              <div class="form-group checkbox">
+                <label for="">&nbsp;</label>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  Business hours
+                </button>
+                <button class="btn btn-default btn-sm">
+                  <!-- <i class="icon ion-ios-circle-outline"></i>
+                  <i class="icon ion-ios-checkmark" style="display: none"></i> -->
+                  After hours
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" value="yacketyyakfarmer@gmail.com">
+            <label for=""><i class="icon ion-ios-email"></i> Email address</label>
+            <span class="help-text">Please enter patient's email address </span>
+          </div>
+
+        </div>
+        <div class="col-xs-6">
+
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="0419 580 109">
+                <label for="">Emergency contact's #</label>
+                <span class="help-text">&nbsp; </span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="Martha">
+                <label for="">Emergency contact's name</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="Mother's mobile">
+                <label for="">Note</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="">
+                <label for="">Next of kin #</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="">
+                <label for="">Next of kin name</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="">
+                <label for="">Note</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group checkbox">
+            <label for="">Consent for reminders</label>
+            <div class="btn-group">
+              <button class="btn btn-default btn-sm active">Phone</button>
+              <button class="btn btn-default btn-sm active">SMS</button>
+              <button class="btn btn-default btn-sm">Mail</button>
+              <button class="btn btn-default btn-sm">Email</button>
+            </div>
+          </div>
+          <div class="form-group checkbox">
+            <label for="">Consent for newsletter</label>
+            <div class="btn-group">
+              <button class="btn btn-default btn-sm">Phone</button>
+              <button class="btn btn-default btn-sm active">SMS</button>
+              <button class="btn btn-default btn-sm">Mail</button>
+              <button class="btn btn-default btn-sm active">Email</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="carer">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="Maeve Millay">
+                <label for="">Name</label>
+                <span class="help-text">Please enter carer's name</span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="0419 5580 109">
+                <label for="">Contact #</label>
+                <span class="help-text">Please enter carer's contact number</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="Patient's daughter">
+            <label for="">Notes</label>
+            <span class="help-text">&nbsp;</span>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="6148 Railway Parade">
+            <label for="">Address line 1</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="">
+            <label for="">Address line 2</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="North Yackandandah">
+                <label for="">Suburb</label>
+                <span class="help-text">Please enter carer's suburb</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group select">
+                <label for="">State</label>
+                <select class="form-control" name="">
+                  <option value="">--</option>
+                  <option >NSW</option>
+                  <option >NT</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>TAS</option>
+                  <option selected>VIC</option>
+                  <option>WA</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="3749">
+                <label for="">Postcode</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="power-attorney">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="Clementine Pennyfeather">
+                <label for="">Name</label>
+                <span class="help-text">Please enter carer's name</span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="0419 580 109">
+                <label for="">Contact #</label>
+                <span class="help-text">Please enter carer's contact number</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="Patient's daughter">
+            <label for="">Notes</label>
+            <span class="help-text">&nbsp;</span>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="6148 Railway Parade">
+            <label for="">Address line 1</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="">
+            <label for="">Address line 2</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="North Yackandandah">
+                <label for="">Suburb</label>
+                <span class="help-text">Please enter carer's suburb</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group select">
+                <label for="">State</label>
+                <select class="form-control" name="">
+                  <option value="">--</option>
+                  <option >NSW</option>
+                  <option >NT</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>TAS</option>
+                  <option selected>VIC</option>
+                  <option>WA</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="3749">
+                <label for="">Postcode</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center add">
+          <br>
+          <i class="fa fa-plus-circle"></i> Add another
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="payment-info">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="8003 6083 3338 2828">
+                <label for=""><i class="fa fa-square"></i> Individual Health Identifier (IHI)</label>
+                <span class="help-text">Please enter patient's IHI number</span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group checkbox">
+                <label for="">&nbsp;</label>
+                <span class="label label-success">Active</span>
+                <span class="label label-success">Validated</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group checkbox">
+            <label for="">Options</label>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm active" name="button">
+                <!-- <i class="icon ion-ios-circle-outline" style="display: none"></i>
+                <i class="icon ion-ios-checkmark "></i> -->
+                My Health Record</button>
+              <button type="button" class="btn btn-default btn-sm active" name="button">
+                <!-- <i class="icon ion-ios-circle-outline" style="display: none"></i>
+                <i class="icon ion-ios-checkmark "></i> -->
+                ePrescription</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label has-warning">
+                <input type="text" class="form-control">
+                <label for=""><i class="fa fa-square"></i> Medicare</label>
+                <span class="help-text">Please enter patient's medicare card number</span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">IRN</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">Valid to</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-9">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="0419 580 109">
+                <label for=""><i class="fa fa-square"></i> Health care card</label>
+                <span class="help-text">Please enter patient's health care card number</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" value="03.2018">
+                <label for="">Valid to</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center add">
+              <br>
+              <i class="fa fa-plus-circle"></i> Add another
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group radio">
+            <label for="">Payer</label>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm" name="button">
+                <!-- <i class="icon ion-ios-circle-outline"></i>
+                <i class="icon ion-ios-checkmark " style="display: none"></i> -->
+                Payer
+              </button>
+              <button type="button" class="btn btn-default btn-sm active" name="button">
+                <!-- <i class="icon ion-ios-circle-outline" style="display: none"></i>
+                <i class="icon ion-ios-checkmark " ></i> -->
+                Carer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="Maeve Millay">
+                <label for="">Name</label>
+                <span class="help-text">Please enter carer's name</span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="0419 580 109">
+                <label for="">Contact #</label>
+                <span class="help-text">Please enter carer's contact number</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label has-warning">
+                <input type="text" class="form-control">
+                <label for=""><i class="fa fa-square"></i> Medicare</label>
+                <span class="help-text">Please enter patient's medicare card number</span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">IRN</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control">
+                <label for="">Valid to</label>
+                <span class="help-text">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="14.08.1943">
+                <label for="">Date of birth *</label>
+                <span class="help-text">Please enter date of birth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="6148 Railway Parade">
+            <label for="">Address line 1</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" class="form-control" name="" value="">
+            <label for="">Address line 2</label>
+            <span class="help-text">Please enter carer's address</span>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="North Yackandandah">
+                <label for="">Suburb</label>
+                <span class="help-text">Please enter carer's suburb</span>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form-group select">
+                <label for="">State</label>
+                <select class="form-control" name="">
+                  <option value="">--</option>
+                  <option >NSW</option>
+                  <option >NT</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>TAS</option>
+                  <option selected>VIC</option>
+                  <option>WA</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="form-group floating-label">
+                <input type="text" class="form-control" name="" value="3749">
+                <label for="">Postcode</label>
+                <span class="help-text"> </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
