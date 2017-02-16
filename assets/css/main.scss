@@ -118,7 +118,7 @@ $color-blue:         #005cab;
 
 .patient-record, #patient-record {
   .nav-tabs {
-    background-color: #005cab;
+    // background-color: #005cab;
     border-radius: 0;
     > li {
       > a {
@@ -362,5 +362,11 @@ $color-blue:         #005cab;
         width: 100%;
       }
     }
+  }
+}
+.modal-backdrop {
+  background-color: #ddd;
+  &.in {
+    opacity: .9;
   }
 }
