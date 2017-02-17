@@ -109,8 +109,11 @@ $color-blue:         #005cab;
       }
     }
     .toggle {
+      .btn {
+        margin-top: 38px;
+      }
       .fa, .icon {
-        margin-top: 50px;
+        // margin-top: 50px;
       }
     }
   }
