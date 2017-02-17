@@ -367,6 +367,10 @@ $color-blue:         #005cab;
           font-size: 24px;
         }
       }
+      .modal-body {
+        overflow-y: scroll;
+        height: calc(100% - 167px);
+      }
       .modal-footer {
         position: absolute;
         bottom: 0;
