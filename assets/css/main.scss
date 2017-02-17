@@ -152,7 +152,10 @@ $color-blue:         #005cab;
     font-size: 16px;
     .tab-pane {
       padding: 20px;
-
+      .heading {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
       .add {
         color: rgba(0,0,0,.2);
       }
